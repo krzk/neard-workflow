@@ -9,12 +9,7 @@
 #
 name: "Builds"
 on:
-  pull_request:
-  push:
-  schedule:
-    # Run at 1:01 AM, every Tuesday
-    - cron: '1 1 * * 2'
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   job:
